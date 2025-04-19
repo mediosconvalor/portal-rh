@@ -1,0 +1,35 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuración de IDEs
+.vscode/
+*.code-workspace
+
+# Archivos temporales o de caché
+*.log
+*.tmp
+*.cache
+*.bak
+
+# Sistema de XAMPP o localhost
+xampp/
+htdocs/
+.env
+*.sqlite
+
+# Archivos de sesión o tokens
+tokens/
+session/
+*.json
+
+# Archivos de compilación o backups
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Archivos específicos de PHP
+vendor/
+composer.lock

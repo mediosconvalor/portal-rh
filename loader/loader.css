@@ -1,0 +1,73 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--fondo-loader, #2c2f3a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+}
+
+.loader-svg {
+  width: 120px;
+  height: 120px;
+  animation: scaleTree 1.8s ease-out forwards;
+  transform-origin: center center;
+}
+
+/* Animación de entrada */
+@keyframes scaleTree {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animación de salida */
+.loader-svg.hide {
+  animation: shrinkTree 0.5s ease-in-out forwards;
+}
+
+@keyframes shrinkTree {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+
+/* Frase tipo máquina de escribir */
+.loader-text {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation:
+    typing 3.5s steps(40, end) 0.5s forwards,
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 270px }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
