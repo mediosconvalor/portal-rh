@@ -138,8 +138,7 @@ if ($response !== false) {
   </main>
 
   <footer style="text-align: center; padding: 20px 10px; font-size: 0.9rem; color: inherit;">
-    &copy; <span id="anioActual"></span> All Rights Reserved - MEDIOS CON VALOR 
-    | Developed by <a href="https://github.com/equis01" style="text-decoration: none; color: inherit;">equisx01</a>
+  &copy; <span id="anioActual"></span> All Rights Reserved - MEDIOS CON VALOR | Developed by <a href="https://github.com/equis01" style="text-decoration: none; color: inherit;" target="_blank">equisx01</a>
   </footer>
 
   <script>

@@ -90,6 +90,6 @@ Coloca tus capturas en una carpeta llamada `/capturas/` dentro del repositorio. 
 
 ---
 
-## © Medios Con Valor
+## © <a href="https://github.com/equis01">Eduardo Vázquez</a>
 
 Proyecto desarrollado para uso interno. Todos los derechos reservados.
