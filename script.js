@@ -21,9 +21,12 @@ function actualizarTextoModo(esClaro) {
 // === Menú hamburguesa ===
 function toggleMenu() {
   const menu = document.getElementById("menuMobile");
-  if (menu) {
-    menu.classList.toggle("show");
-  }
+  const boton = document.querySelector(".nav-toggle");
+
+  menu.classList.toggle("show"); // <- CAMBIADO DE "open" A "show"
+  boton.classList.toggle("rotate");
+
+  boton.textContent = menu.classList.contains("show") ? "✖" : "☰";
 }
 
 // === Saludo dinámico ===
